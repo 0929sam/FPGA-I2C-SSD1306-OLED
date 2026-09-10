@@ -4,12 +4,14 @@
 ![Language](https://img.shields.io/badge/Language-Verilog%20HDL-informational)
 ![Toolchain](https://img.shields.io/badge/Toolchain-Intel%20Quartus%20Prime-orange)
 ![Protocol](https://img.shields.io/badge/Protocol-I2C%20(bit--banged)-brightgreen)
+![Timeline](https://img.shields.io/badge/Timeline-2025%20Sophomore%20Year-lightgrey)
 
 ## 📌 專案簡介 (Overview)
 
-從零手刻一個 **I2C Master 控制器**，不使用任何 IP 或現成 I2C 控制器 IP core，純用 Verilog
-狀態機實作 START/STOP 條件、位元傳輸與 ACK 偵測，透過杜邦線接到 **SSD1306 0.96" OLED**
-（I2C 位址 `0x78`），送出完整的初始化指令序列，再把一張 128×64 的點陣圖畫面傳輸上去顯示。
+本專案完成於 **2025 年、大二**期間，從零手刻一個 **I2C Master 控制器**，不使用任何 IP 或現成
+I2C 控制器 IP core，純用 Verilog 狀態機實作 START/STOP 條件、位元傳輸與 ACK 偵測，透過杜邦線
+接到 **SSD1306 0.96" OLED**（I2C 位址 `0x78`），送出完整的初始化指令序列，再把一張 128×64 的
+點陣圖畫面傳輸上去顯示。
 
 系統分成兩個時脈域：FPGA 端 50 MHz 高速時脈負責按鍵去彈跳，再分頻出約 100 kHz（I2C
 Standard-mode 速度）的匯流排時脈驅動整個 I2C 狀態機，兩個時脈域之間用雙正反器同步器
@@ -206,6 +208,6 @@ FPGA-I2C-SSD1306-OLED/
 
 ## 👤 作者 (Author)
 
-**CHEN SHUO HU**
+**CHEN SHUO HU**（大二，2025）
 
 RTL、I2C 狀態機設計與除錯皆為個人獨立完成。
