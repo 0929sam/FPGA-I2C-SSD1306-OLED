@@ -4,11 +4,12 @@
 ![Language](https://img.shields.io/badge/Language-Verilog%20HDL-informational)
 ![Toolchain](https://img.shields.io/badge/Toolchain-Intel%20Quartus%20Prime-orange)
 ![Protocol](https://img.shields.io/badge/Protocol-I2C%20(bit--banged)-brightgreen)
-![Timeline](https://img.shields.io/badge/Timeline-2025%20Sophomore%20Year-lightgrey)
+![Timeline](https://img.shields.io/badge/Timeline-2025%20Summer%20(Sophomore→Junior)-lightgrey)
 
 ## 📌 專案簡介 (Overview)
 
-本專案完成於 **2025 年、大二**期間，從零手刻一個 **I2C Master 控制器**，不使用任何 IP 或現成
+本專案完成於 **2025 年、大二升大三的暑假**（除錯歷程橫跨 6 月到 9 月，正好卡在升大三的暑假），
+從零手刻一個 **I2C Master 控制器**，不使用任何 IP 或現成
 I2C 控制器 IP core，純用 Verilog 狀態機實作 START/STOP 條件、位元傳輸與 ACK 偵測，透過杜邦線
 接到 **SSD1306 0.96" OLED**（I2C 位址 `0x78`），送出完整的初始化指令序列，再把一張 128×64 的
 點陣圖畫面傳輸上去顯示。
@@ -208,6 +209,6 @@ FPGA-I2C-SSD1306-OLED/
 
 ## 👤 作者 (Author)
 
-**CHEN SHUO HU**（大二，2025）
+**CHEN SHUO HU**（大二升大三暑假，2025）
 
 RTL、I2C 狀態機設計與除錯皆為個人獨立完成。
